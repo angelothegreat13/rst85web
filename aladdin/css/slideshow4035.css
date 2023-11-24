@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  1920센터 정렬 완벽 구현 */
+.slideshow2_wrap {position:relative; height:710px; overflow:hidden; clear:both; top:24px;} 
+.slideshow2_wrap_center {position:absolute; width:1920px; left:50%; margin-left:-960px;}
+
+/* 기본속성 */
+.number_slideshow{position: relative;}
+.number_slideshow_nav{position: absolute;  top:850px; left:920px;} /* ysk점의 위치설정 */
+.number_slideshow .number_slideshow_nav li{margin:0 0 0 10px; position: relative; float: left; }
+.number_slideshow .number_slideshow_nav li a{padding-left: 5px; padding-right: 10px;} /* ysk점의 곡선설정 */
+.number_slideshow ul{background-position:center center; background-repeat: no-repeat;}
+.number_slideshow ul li{border-radius: 100px; -webkit-border-radius: 100px; -moz-border-radius: 100px; -o-border-radius: 100px; -khtml-border-radius: 100px; padding: 0px; margin: 0px; list-style: none; position: absolute;}

@@ -1,0 +1,120 @@
+/*--ysk--------------------------------------------------------------------------------*
+
+	ysk 2020년04월
+
+-----------------------------------------------------------------------------------ysk-*/
+@charset "utf-8";
+@import url(font.css);
+
+:root {
+	--header_wrap-height: 6.5em;
+	--gradient-gold-double: linear-gradient(to right, #f4e276 0%, #b4843c 8%, #f4e276 25%, #b4843c 45%, #b4843c 55%, #f4e276 75%, #b4843c 92%, #f4e276 100%);
+}
+
+/*-------------------------------------------------------------------------------------*
+ *  기본스타일 시트                                                                    *
+ *-------------------------------------------------------------------------------------*/
+a    {color:#eaeaea; text-decoration:none}
+/* body {font:normal 14px/1.5 'KoreanAH3R', 'NotoSans', "나눔고딕", NanumGothic, NG, "돋움", Dotum, Arial, Tahoma , Geneva, Verdana;color:#333;} */
+body {font:normal 14px/1.5 'NotoSans', "나눔고딕", NanumGothic, NG, "돋움", Dotum, Arial, Tahoma , Geneva, Verdana;color:#333;}
+
+:focus-visible {
+	outline: 3px solid rgba(255, 255, 255, .3);
+}
+/*-------------------------------------------------------------------------------------*
+ *  인풋                                                                               *
+ *-------------------------------------------------------------------------------------*/
+input::-webkit-input-placeholder    {color:#888888; font-size:.9em; letter-spacing:-1pt;}
+input:-ms-input-placeholder         {color:#888888; font-size:.9em; letter-spacing:-1pt;}
+textarea::-webkit-input-placeholder {color:#888888; font-size:.9em; letter-spacing:-1pt;}
+textarea:-ms-input-placeholder      {color:#888888; font-size:.9em; letter-spacing:-1pt;}
+input::placeholder                  {color:#888888; font-size:.9em; letter-spacing:-1pt;}
+textarea::placeholder               {color:#888888; font-size:.9em; letter-spacing:-1pt;}
+
+input:disabled {opacity: .7;}
+
+/*-------------------------------------------------------------------------------------*
+ *  고정스타일 시트                                                                    *
+ *-------------------------------------------------------------------------------------*/
+A,area   {blr:expression(this.onFocus=this.blur())} 
+:focus   {-moz-outline-style: none;} 
+form     {margin:0;} 
+img      {border:none;}
+ul,ol,li,dl,dd,dt  {margin:0; list-style:none;}
+
+html,body,div,span,object,iframe,p,
+blockquote,pre,abbr,address,cite,code,del,dfn,em,img,
+ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,
+fieldset,form,label,legend,caption,tbody,tfoot,thead,tr,th,swf,javascript,
+article,aside,canvas,details,figcaption,figure,footer,header,td,
+menu,nav,section{margin:0;padding:0}
+body::-webkit-scrollbar{display: none;}
+
+img,fieldset,iframe{border:0 none}
+img {/* max-width:100%; */vertical-align:middle}
+textarea{resize:none}
+input,select,textarea,button{font-size:100%;vertical-align:middle;-webkit-box-sizing:border-box;box-sizing:border-box}
+h1,h2,h3,h4,h5,h6{font-size:100%}
+address,strong,caption,cite,code,dfn,em,var{font-style:normal;font-weight:normal}
+blockquote,q{quotes:none} 
+blockquote:before,blockquote:after,q:before,q:after{content:"";content:none} 
+
+/* base - IE8~7 */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+.hide{display: none;}
+.hide-force{display: none !important;}
+.flex{display: flex;}
+
+/* base - input */
+input[type="text"],input[type="password"],input[type="submit"],input[type="search"],input[type="image"],textarea{-webkit-appearance:none;} 
+input:checked[type="checkbox"]{background-color:#666;-webkit-appearance:checkbox} 
+button,input[type="button"],input[type="submit"],input[type="reset"],input[type="file"]{-webkit-appearance:button;border-radius:0} 
+input[type="search"]::-webkit-search-cancel-button{-webkit-appearance:none}
+
+ul>li>a, td>a{cursor: pointer;}
+
+.disabled {
+	pointer-events: none;
+	opacity: .7;
+}
+
+.mt10{margin-top: 10px !important;}
+.mt20{margin-top: 20px !important;}
+.w100{width: 100px;}
+.mw5em{max-width: 5em;}
+
+.no-padding {
+	padding: 0 !important;
+}
+
+/*페이징*/
+.paging_box { position:relative; text-align:center;min-height:30px;margin-top: 20px;}
+.paging_box .left { position:absolute; top:0; left:0;}
+.paging_box .right { position:absolute; top:0; right:0;}
+.pagination{display:inline-block;padding-left:0;border-radius:4px;vertical-align:top;}
+.pagination>li {display:inline}
+.pagination>li>a, .pagination>li>span {position: relative;margin: 3px;border-radius: 5px;float: left;background: #131313;padding: 10px 15px;line-height: 20px;text-decoration: none;}
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {color:#2a6496;background-color:#000;border-color:#ddd}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {color: #b7a16b;cursor: default;}
+.pagination>.disabled>a, .pagination>.disabled>a:focus, .pagination>.disabled>a:hover, .pagination>.disabled>span, .pagination>.disabled>span:focus, .pagination>.disabled>span:hover {color: #424242;background-color: #101010;border-color: #131313;;cursor:not-allowed}
+.pagination [class*=icon-]{margin:0 -6px;font-size:14px;}
+
+
+/*게임팝업창*/
+
+body.game-wrapper {
+	background-color: #131313;
+	overflow: auto;
+	margin: 0;
+	min-height: 100%;
+}
+
+iframe.game-frame {
+	background-color: black;
+	padding: 0;
+	border: none;
+}
+
+.img-captcha {
+	cursor: pointer;
+}

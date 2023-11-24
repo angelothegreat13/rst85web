@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* =============================
+	NotoSans
+============================= */
+@font-face {
+	font-family: 'KoreanAH3R';
+	font-stretch: 1% 500%;
+	src: url('../font/KoreanAH3R/KoreanAH3R.eot');
+	src: local(☺),url('../font/KoreanAH3R/KoreanAH3Rd41d.eot?#iefix') format('embedded-opentype'),
+		url('../font/KoreanAH3R/KoreanAH3R.woff') format('woff'),
+		url('../font/KoreanAH3R/KoreanAH3R.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'NotoSans';
+	font-weight:100;
+	src: url('../font/notosans/NotoSans-Thin.eot');
+	src: local(☺),url('../font/notosans/NotoSans-Thind41d.eot?#iefix') format('embedded-opentype'),
+			 url('../font/notosans/NotoSans-Thin.woff') format('woff');
+ }
+ 
+ @font-face {
+	font-family: 'NotoSans';
+	font-weight:200;
+	src: url('../font/notosans/NotoSans-Light.eot');
+	src: local(☺),url('../font/notosans/NotoSans-Lightd41d.eot?#iefix') format('embedded-opentype'),
+			 url('../font/notosans/NotoSans-Light.woff') format('woff');
+ }
+ 
+ @font-face {
+	font-family: 'NotoSans';
+	font-weight:300;
+	src: url('../font/notosans/NotoSans-DemiLight.eot');
+	src: local(☺),url('../font/notosans/NotoSans-DemiLightd41d.eot?#iefix') format('embedded-opentype'),
+			 url('../font/notosans/NotoSans-DemiLight.woff') format('woff');
+ }
+ 
+ @font-face {
+	font-family: 'NotoSans';
+	src: url('../font/notosans/NotoSans-Regular.eot');
+	src: local(☺),url('../font/notosans/NotoSans-Regulard41d.eot?#iefix') format('embedded-opentype'),
+			 url('../font/notosans/NotoSans-Regular.woff') format('woff');
+ }
+ 
+ @font-face {
+	font-family: 'NotoSans';
+	font-weight:bold;
+	src: url('../font/notosans/NotoSans-Medium.html');
+	src: local(☺),url('../font/notosans/NotoSans-Mediumd41d.html?#iefix') format('embedded-opentype'),
+			 url('../font/notosans/NotoSans-Medium.woff') format('woff');
+ }
+ 
+ @font-face {
+	font-family: 'NotoSans';
+	font-weight:800;
+	src: url('../font/notosans/NotoSans-Bold.eot');
+	src: local(☺),url('../font/notosans/NotoSans-Boldd41d.eot?#iefix') format('embedded-opentype'),
+			 url('../font/notosans/NotoSans-Bold.woff') format('woff');
+ }
